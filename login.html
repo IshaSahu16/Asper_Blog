@@ -46,13 +46,13 @@
 
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" required>
-                        <label>Email</label>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
                     </div>
 
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-lock-alt'></i></span>
-                        <input type="password" required>
+                        <input type="password" id="password" required>
                         <label>Password</label>
                     </div>
 
@@ -64,7 +64,7 @@
                     <button type="submit" class="btn">Sign In</button>
 
                     <div class="login-register">
-                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                        <p>Don't have an account? <a href="#" class="register-link" id="submit">Sign Up</a></p>
                     </div>
                 </form>
             </div>
@@ -79,7 +79,7 @@
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-user'></i></span>
                         <input type="text" required>
-                        <label>Name</label>
+                        <label>Username</label>
                     </div>
 
                     <div class="input-box">
@@ -108,6 +108,41 @@
         </div>
     </div>
 
+    <!----------- firebase script for login page ----------->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAkPgAR0Hs6v5oNlmxYxI2OGh-S8YA2OWU",
+            authDomain: "creativetutorial-43ba7.firebaseapp.com",
+            projectId: "creativetutorial-43ba7",
+            storageBucket: "creativetutorial-43ba7.appspot.com",
+            messagingSenderId: "52869654198",
+            appId: "1:52869654198:web:0a19740d1f26ade1066817"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        //get ref to database services
+        const db = getDatabase(app);
+
+        document.getElementById("submit").addEventListener('click', function (e) {
+            e.preventDefault();
+            set(ref(db, 'user/' + document.getElementById("username").value),
+                {
+
+                    username: document.getElementById("username").value,
+                    password: document.getElementById("password").value
+
+                });
+            alert("Login Sucessfull  !");
+        })
+    </script>
+  
     <!-------- javascript file ---------->
     <script src="./login.js"></script>
 </body>
