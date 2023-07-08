@@ -17,12 +17,13 @@
 </head>
 
 <body>
+
     <!------ background ------>
-    <div class="background"></div>
-    <!------ login container -------->
-    <div class="container">
+    <div class="background-login"></div>
+    <!------ login container-login -------->
+    <div class="container-login">
         <div class="content">
-            <h2 class="logo"><img src="./assets/images/logo.png" alt="logo"></i>Asperia</h2>
+            <h2 class="logo"><img src="./assets/images/logo.png" alt="logo"></i><a href="/index.html">Asperia</a></h2>
             <div class="text-sci">
                 <h2>Welcome!<br><span>To Our Blog Website.</h2>
                 <p>Step into our captivating blogosphere and indulge in a world of delightful stories and fascinating
@@ -38,13 +39,15 @@
         <div class="logreg-box">
             <!------ login form ------->
             <div class="form-box login">
+                <a href="./index.html" class="back-btn-login"><i class='bx bx-arrow-back'></i></a>
+
                 <form action="#">
                     <h2>Sign In</h2>
 
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" required>
-                        <label>Email</label>
+                        <input type="text" required>
+                        <label>Username</label>
                     </div>
 
                     <div class="input-box">
@@ -69,31 +72,33 @@
             <!-------- registration form --------->
             <div class="form-box register">
                 <form action="#">
+                    <a href="./index.html" class="back-btn-register"><i class='bx bx-arrow-back'></i></a>
+
                     <h2>Sign Up</h2>
 
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-user'></i></span>
-                        <input type="text" required>
-                        <label>Name</label>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
                     </div>
 
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" required>
+                        <input type="email" id="email" required>
                         <label>Email</label>
                     </div>
 
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-lock-alt'></i></span>
-                        <input type="password" required>
-                        <label>Password</label>
+                        <input type="text" id="phone" required>
+                        <label>Phone Number</label>
                     </div>
 
                     <div class="remember-forgot">
                         <label><input type="checkbox"> I agree to the terms and conditions</label>
                     </div>
 
-                    <button type="submit" class="btn">Sign Up</button>
+                    <button type="submit" class="btn" id="submit">Sign Up</button>
 
                     <div class="login-register">
                         <p>Already have an account? <a href="#" class="login-link">Sign In</a></p>
@@ -103,6 +108,44 @@
         </div>
     </div>
 
+    <!----------- firebase script for login page ----------->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+        // import { getAuth } from "firebase/auth" ;
+
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAkPgAR0Hs6v5oNlmxYxI2OGh-S8YA2OWU",
+            authDomain: "creativetutorial-43ba7.firebaseapp.com",
+            projectId: "creativetutorial-43ba7",
+            storageBucket: "creativetutorial-43ba7.appspot.com",
+            messagingSenderId: "52869654198",
+            appId: "1:52869654198:web:0a19740d1f26ade1066817"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        //get ref to database services
+        const db = getDatabase(app);
+
+        document.getElementById("submit").addEventListener('click', function (e) {
+            e.preventDefault();
+            set(ref(db, 'user/' + document.getElementById("username").value),
+              {
+   
+                username: document.getElementById("username").value,
+                email: document.getElementById("email").value,
+                PhoneNumber: document.getElementById("phone").value
+
+              });
+            alert("Sign In Sucessfull  !");
+        })
+    </script>
+  
     <!-------- javascript file ---------->
     <script src="./login.js"></script>
 </body>
