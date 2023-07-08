@@ -529,7 +529,7 @@ color: var(--light-color);
     .blog-post-data img{
         height: 40rem;
     }
-}
+} 
 
 @media screen and (min-width: 1200px) {
     .older-posts-grid-wrapper{
