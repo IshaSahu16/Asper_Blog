@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +53,7 @@ body {
     font-size: 30px;
 }
 
-.content .logo a{
+.content .logo a {
     text-decoration: none;
     color: #e4e4e4;
 }
@@ -243,21 +242,45 @@ body {
 }
 
 /* back-button */
-.back-btn-login i{
+.back-btn-login i {
     color: #e4e4e4;
     font-size: 2rem;
     margin-bottom: 25.5rem;
 }
 
-.back-btn-register i{
+.back-btn-register i {
     color: #e4e4e4;
     font-size: 2rem;
 }
 
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+} */
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 9999s ease-in-out 0s;
+}
 
+/* input, textarea {
+    color: #e4e4e4;
+    } */
 
+textarea:focus,
+input:focus {
+    color: #e4e4e4;
+}
 
+input,
+select,
+textarea {
+    color: #e4e4e4;
+}
 
 /* media queries */
 
@@ -278,7 +301,8 @@ body {
     .text-sci p {
         font-size: 14px;
     }
-    .back-btn-register i{
+
+    .back-btn-register i {
         margin-left: 1rem;
     }
 }
@@ -331,12 +355,12 @@ body {
     .login-register p {
         font-size: 13px;
     }
-    
+
     .back-btn-register i {
         font-size: 1.6rem;
     }
 
-    .back-btn-login i{
+    .back-btn-login i {
         margin-left: 2rem;
     }
 }

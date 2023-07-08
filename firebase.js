@@ -1,4 +1,3 @@
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
@@ -19,33 +18,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth()
 
-//Getting All the Objects of htmls
-var username = document.getElementById("username")
-var email = document.getElementById("email")
-var password = document.getElementById("password")
-
-
 //making a function for storing data
-export function signup(e) {
-    e.preventDefault();
-    var obj = {
-        username: username.value,
-        email: email.value,
-        password: password.value,
-    }
-    createUserWithEmailAndPassword(auth, obj.email, obj.passwords)
+export function signup(email,password) {
+    createUserWithEmailAndPassword(auth, email, password)
         .then(function (success) {
             alert("Signup Successfully")
         })
         .catch(function (err) {
             alert("error" + err)
         });
-    console.log(obj);
 };
-
-
-
-
-
-
-

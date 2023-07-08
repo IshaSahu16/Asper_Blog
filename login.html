@@ -47,7 +47,7 @@
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
                         <input type="text" required>
-                        <label>Username</label>
+                        <label>Email</label>
                     </div>
 
                     <div class="input-box">
@@ -71,7 +71,7 @@
 
             <!-------- registration form --------->
             <div class="form-box register">
-                <form action="#" onsubmit="signup">
+                <form action="#" onsubmit="handlesignup(event)">
                     <a href="./index.html" class="back-btn-register"><i class='bx bx-arrow-back'></i></a>
 
                     <h2>Sign Up</h2>
@@ -98,7 +98,7 @@
                         <label><input type="checkbox"> I agree to the terms and conditions</label>
                     </div>
 
-                    <button type="submit" class="btn" id="signup" value="Sign up">Sign Up</button>
+                    <button type="submit" class="btn" id="signup_" value="Sign up">Sign Up</button>
 
                     <div class="login-register">
                         <p>Already have an account? <a href="#" class="login-link">Sign In</a></p>
@@ -108,166 +108,18 @@
         </div>
     </div>
     
-    <script>
-        function signup(){
-            console.log("hello");
+    <!--------- javascript files ---------->
+    <script type="module">
+        import {signup} from "./firebase.js"
+        window.handlesignup = function handlesignup(e) {
+            e.preventDefault();
+            var username = document.getElementById("username")
+            var email = document.getElementById("email")
+            var password = document.getElementById("password")
+            signup(email.value, password.value)
         }
-
     </script>
-    <script src="./firebase.js" type="module"></script>
     <script src="./login.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // <!-- <script type="module">
-    //     // Import the functions you need from the SDKs you need
-    //     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-    //     import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
-    //     // import { getAuth } from "firebase/auth" ;
-
-
-    //     // Your web app's Firebase configuration
-    //     const firebaseConfig = {
-    //         apiKey: "AIzaSyAkPgAR0Hs6v5oNlmxYxI2OGh-S8YA2OWU",
-    //         authDomain: "creativetutorial-43ba7.firebaseapp.com",
-    //         projectId: "creativetutorial-43ba7",
-    //         storageBucket: "creativetutorial-43ba7.appspot.com",
-    //         messagingSenderId: "52869654198",
-    //         appId: "1:52869654198:web:0a19740d1f26ade1066817"
-    //     };
-
-    //     // Initialize Firebase
-    //     const app = initializeApp(firebaseConfig);
-
-    //     //get ref to database services
-    //     const db = getDatabase(app);
-
-    //     document.getElementById("submit").addEventListener('click', function (e) {
-    //         e.preventDefault();
-    //         set(ref(db, 'user/' + document.getElementById("username").value),
-    //           {
-   
-    //             username: document.getElementById("username").value,
-    //             email: document.getElementById("email").value,
-    //             PhoneNumber: document.getElementById("phone").value
-
-    //           });
-    //         alert("Sign In Sucessfull  !");
-    //     })
-    // </script> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ------ registration form -------
-            <div class="form-box register">
-                <form action="#">
-                    <a href="./index.html" class="back-btn-register"><i class='bx bx-arrow-back'></i></a>
-
-                    <h2>Sign Up</h2>
-
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-user'></i></span>
-                        <input type="text" id="username" required>
-                        <label>Username</label>
-                    </div>
-
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" id="email" required>
-                        <label>Email</label>
-                    </div>
-
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
-                        <input type="text" id="phone" required>
-                        <label>Phone Number</label>
-                    </div>
-
-                    <div class="remember-forgot">
-                        <label><input type="checkbox"> I agree to the terms and conditions</label>
-                    </div>
-
-                    <button type="submit" class="btn" id="submit">Sign Up</button>
-
-                    <div class="login-register">
-                        <p>Already have an account? <a href="#" class="login-link">Sign In</a></p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div> -->
-
-<!-- <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-        import { getAuth, createdUserWithEmailAndPassword, } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-        // TODO: Add SDKs for firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyAkPgAR0Hs6v5oNlmxYxI2OGh-S8YA2OWU",
-            authDomain: "creativetutorial-43ba7.firebaseapp.com",
-            projectId: "creativetutorial-43ba7",
-            storageBucket: "creativetutorial-43ba7.appspot.com",
-            messagingSenderId: "52869654198",
-            appId: "1:52869654198:web:0a19740d1f26ade1066817"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth()
-          
-        //Getting all the objects of html
-        var username = document.getElementById("username")
-        var email = document.getElementById("email")
-        var PhoneNumber = document.getElementById("phone")
-        
-
-        
-    </script> -->
