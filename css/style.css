@@ -965,9 +965,6 @@ transform: translateY(-10px);
 }
 
 
-
-
-
 /*-----------------------------------*\
 #MEDIA QUERIES
 \*-----------------------------------*/
@@ -999,8 +996,6 @@ transform: translateY(-10px);
     --section-padding: 100px;
 
 }
-
-
 
 /**
     * REUSED STYLE
@@ -1132,14 +1127,11 @@ transform: translateY(-10px);
     --fontSize-2: 4.5rem;
 
 }
-
 /**
     * REUSED STYLE
     */
 
 .container { max-width: 720px; }
-
-
 
 /**
     * RECENT POST
@@ -1148,10 +1140,6 @@ transform: translateY(-10px);
 .recent-post-card { grid-template-columns: 0.7fr 1fr; }
 
 }
-
-
-
-
 
 /**
 * responsive for large than 992px screen
