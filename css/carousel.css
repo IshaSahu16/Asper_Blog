@@ -6,20 +6,13 @@ box-sizing: border-box;
 font-family: "Poppins", sans-serif;
 }
 
-/* body{
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-background: #1D212B;
-} */
-
 .img-slider{
 position: relative;
-width: 800px;
-height: 500px;
-margin: 10px;
-background: #1D212B;
+width: 90vw;
+height: 550px;
+margin-top: 0;
+margin-bottom: 10px;
+border-radius: 10px;
 }
 
 .img-slider .slide{
@@ -38,12 +31,14 @@ transition-property: clip-path;
 .img-slider .slide img{
 z-index: 1;
 width: 100%;
-border-radius: 5px;
+max-height: 550px;
+border-radius: 45px;
 }
 
 .img-slider .slide .info{
 position: absolute;
-top: 0;
+bottom: 0;
+
 padding: 15px 30px;
 }
 
