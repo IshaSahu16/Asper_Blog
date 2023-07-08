@@ -53,6 +53,11 @@ body {
     font-size: 30px;
 }
 
+.content .logo a{
+    text-decoration: none;
+    color: #e4e4e4;
+}
+
 .content .logo img {
     width: 6%;
     margin: 0 10px;
@@ -107,6 +112,10 @@ body {
     border-bottom-right-radius: 10px;
     color: #e4e4e4;
 }
+
+/* .form-box.login form{
+    margin-bottom: 33rem;
+} */
 
 .logreg-box .form-box.login {
     transform: translateX(0);
@@ -232,6 +241,23 @@ body {
     text-decoration: underline;
 }
 
+/* back-button */
+.back-btn-login i{
+    color: #e4e4e4;
+    font-size: 2rem;
+    margin-bottom: 25.5rem;
+}
+
+.back-btn-register i{
+    color: #e4e4e4;
+    font-size: 2rem;
+}
+
+
+
+
+
+
 /* media queries */
 
 @media (max-width:1164px) {
@@ -250,6 +276,9 @@ body {
 
     .text-sci p {
         font-size: 14px;
+    }
+    .back-btn-register i{
+        margin-left: 1rem;
     }
 }
 
@@ -300,5 +329,13 @@ body {
 
     .login-register p {
         font-size: 13px;
+    }
+    
+    .back-btn-register i {
+        font-size: 1.6rem;
+    }
+
+    .back-btn-login i{
+        margin-left: 2rem;
     }
 }
