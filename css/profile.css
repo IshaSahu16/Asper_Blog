@@ -292,7 +292,7 @@ article.about.active {
     padding: 15px;
     padding-top: 45px;
     border-radius: 14px;
-    box-shadow: var(--shadow-2);
+    /* box-shadow: var(--shadow-2); */
     cursor: pointer;
     z-index: 1;
 }
@@ -485,7 +485,7 @@ main {
     backdrop-filter: blur(10px);
     border: 1px solid var(--jet);
     border-radius: 12px 12px 0 0;
-    box-shadow: var(--shadow-2);
+    /* box-shadow: var(--shadow-2); */
     z-index: 5;
 }
 
@@ -558,7 +558,7 @@ main {
     background: var(--border-gradient-onyx);
     padding: 20px;
     border-radius: 14px;
-    box-shadow: var(--shadow-2);
+    /* box-shadow: var(--shadow-2); */
     z-index: 1;
 }
 
@@ -1927,6 +1927,10 @@ textarea.form-input::-webkit-resizer {
     .blog-banner-box {
         height: 230px;
     }
+
+    /* footer{
+        margin-top: -5rem;
+    } */
 
 }
 
