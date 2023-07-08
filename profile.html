@@ -13,6 +13,7 @@
     - custom css link
     -->
     <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/style.css">
     
 
     <!--
@@ -25,6 +26,92 @@
 </head>
 
 <body>
+
+    <!-- 
+    - #HEADER
+    -->
+
+    <header class="header" data-header>
+    <div class="container">
+
+        <a href="#" class="logo">
+        <img src="Assets/images/logo.png" width="30" height="10" alt="logo">
+        </a>
+
+        <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+            <a href="#" class="logo">
+            <img src="Assets/images/logo.png" width="119" height="37" alt="logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+        </div>
+
+        <ul class="navbar-list">
+
+            <li>
+            <a href="#home" class="navbar-link hover-1" data-nav-toggler>Home</a>
+            </li>
+
+            <li>
+            <a href="#categories" class="navbar-link hover-1" data-nav-toggler>Categories</a>
+            </li>
+
+            <li>
+            <a href="#featured" class="navbar-link hover-1" data-nav-toggler>Featured Blogs</a>
+            </li>
+
+            <li>
+            <a href="profile.html" class="navbar-link hover-1" data-nav-toggler>Profile</a>
+            </li>
+
+        </ul>
+
+        <div class="navbar-bottom">
+
+            <div class="profile-card">
+            <img src="Assets/images/author-1.png" width="48" height="48" alt="Steven" class="profile-banner">
+            </div>
+
+            <ul class="link-list">
+
+            <li>
+                <a href="profile.html" class="navbar-bottom-link hover-1">Profile</a>
+            </li>
+
+            <li>
+                <a href="#" class="navbar-bottom-link hover-1">Articles Saved</a>
+            </li>
+
+            <li>
+                <a href="#" class="navbar-bottom-link hover-1">My Likes</a>
+            </li>
+
+            <li>
+                <a href="#" class="navbar-bottom-link hover-1">Account Setting</a>
+            </li>
+
+            <li>
+                <a href="login.html" class="navbar-bottom-link hover-1">Log In</a>
+            </li>
+
+            </ul>
+        </div>
+        </nav>
+
+
+        <a href="login.html" class="btn btn-primary">Login</a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+        
+    </div>
+    </header>
+
 
 
 
@@ -43,7 +130,7 @@
             <div class="sidebar-info">
 
                 <figure class="avatar-box">
-                    <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+                    <img src="Assets/images/my-avatar.png" alt="Richard hanrick" width="80">
                 </figure>
 
                 <div class="info-content">
@@ -161,29 +248,25 @@
     - #NAVBAR
     -->
 
-            <nav class="navbar">
+            <nav class="navbar1">
 
-                <ul class="navbar-list">
+                <ul class="navbar1-list">
 
-                    <li class="navbar-item">
-                        <button class="navbar-link  active" data-nav-link>About</button>
+                    <li class="navbar1-item">
+                        <button class="navbar1-link  active" data-nav-link>About</button>
                     </li>
 
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Blog</button>
+                    <li class="navbar1-item">
+                        <button class="navbar1-link" data-nav-link>Blog</button>
                     </li>
 
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Contact</button>
+                    <li class="navbar1-item">
+                        <button class="navbar1-link" data-nav-link>Contact</button>
                     </li>
 
                 </ul>
 
             </nav>
-
-
-
-
 
     <!--
     - #ABOUT
@@ -225,7 +308,7 @@
                         <li class="service-item">
 
                             <div class="service-icon-box">
-                                <img src="./assets/images/icon-design.png" alt="design icon" width="40">
+                                <img src="Assets/images/icon-design.png" alt="design icon" width="40">
                             </div>
 
                             <div class="service-content-box">
@@ -241,7 +324,7 @@
                         <li class="service-item">
 
                             <div class="service-icon-box">
-                                <img src="./assets/images/icon-dev.png" alt="Web development icon" width="40">
+                                <img src="Assets/images/icon-dev.png" alt="Web development icon" width="40">
                             </div>
 
                             <div class="service-content-box">
@@ -257,7 +340,7 @@
                         <li class="service-item">
 
                             <div class="service-icon-box">
-                                <img src="./assets/images/icon-app.png" alt="mobile app icon" width="40">
+                                <img src="Assets/images/icon-app.png" alt="mobile app icon" width="40">
                             </div>
 
                             <div class="service-content-box">
@@ -273,7 +356,7 @@
                         <li class="service-item">
 
                             <div class="service-icon-box">
-                                <img src="./assets/images/icon-photo.png" alt="camera icon" width="40">
+                                <img src="Assets/images/icon-photo.png" alt="camera icon" width="40">
                             </div>
 
                             <div class="service-content-box">
@@ -291,9 +374,9 @@
                 </section>
 
 
-                <!--
-          - testimonials
-        -->
+            <!--
+        - testimonials
+    -->
 
                 <section class="testimonials">
 
@@ -305,7 +388,7 @@
                             <div class="content-card" data-testimonials-item>
 
                                 <figure class="testimonials-avatar-box">
-                                    <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60"
+                                    <img src="Assets/images/avatar-1.png" alt="Daniel lewis" width="60"
                                         data-testimonials-avatar>
                                 </figure>
 
@@ -330,7 +413,7 @@
                             <div class="content-card" data-testimonials-item>
 
                                 <figure class="testimonials-avatar-box">
-                                    <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60"
+                                    <img src="Assets/images/avatar-2.png" alt="Jessica miller" width="60"
                                         data-testimonials-avatar>
                                 </figure>
 
@@ -355,7 +438,7 @@
                             <div class="content-card" data-testimonials-item>
 
                                 <figure class="testimonials-avatar-box">
-                                    <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60"
+                                    <img src="Assets/images/avatar-3.png" alt="Emily evans" width="60"
                                         data-testimonials-avatar>
                                 </figure>
 
@@ -380,7 +463,7 @@
                             <div class="content-card" data-testimonials-item>
 
                                 <figure class="testimonials-avatar-box">
-                                    <img src="./assets/images/avatar-4.png" alt="Henry william" width="60"
+                                    <img src="Assets/images/avatar-4.png" alt="Henry william" width="60"
                                         data-testimonials-avatar>
                                 </figure>
 
@@ -406,9 +489,9 @@
                 </section>
 
 
-                <!--
-          - testimonials modal
-        -->
+            <!--
+        - testimonials modal
+    -->
 
                 <div class="modal-container" data-modal-container>
 
@@ -422,10 +505,10 @@
 
                         <div class="modal-img-wrapper">
                             <figure class="modal-avatar-box">
-                                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                                <img src="Assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
                             </figure>
 
-                            <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                            <img src="Assets/images/icon-quote.svg" alt="quote icon">
                         </div>
 
                         <div class="modal-content">
@@ -453,9 +536,9 @@
                 </div>
 
 
-                <!--
-          - clients
-        -->
+            <!--
+        - clients
+    -->
 
                 <section class="clients">
 
@@ -465,37 +548,37 @@
 
                         <li class="clients-item">
                             <a href="#">
-                                <img src="./assets/images/logo-1-color.png" alt="client logo">
+                                <img src="Assets/images/logo-1-color.png" alt="client logo">
                             </a>
                         </li>
 
                         <li class="clients-item">
                             <a href="#">
-                                <img src="./assets/images/logo-2-color.png" alt="client logo">
+                                <img src="Assets/images/logo-2-color.png" alt="client logo">
                             </a>
                         </li>
 
                         <li class="clients-item">
                             <a href="#">
-                                <img src="./assets/images/logo-3-color.png" alt="client logo">
+                                <img src="Assets/images/logo-3-color.png" alt="client logo">
                             </a>
                         </li>
 
                         <li class="clients-item">
                             <a href="#">
-                                <img src="./assets/images/logo-4-color.png" alt="client logo">
+                                <img src="Assets/images/logo-4-color.png" alt="client logo">
                             </a>
                         </li>
 
                         <li class="clients-item">
                             <a href="#">
-                                <img src="./assets/images/logo-5-color.png" alt="client logo">
+                                <img src="Assets/images/logo-5-color.png" alt="client logo">
                             </a>
                         </li>
 
                         <li class="clients-item">
                             <a href="#">
-                                <img src="./assets/images/logo-6-color.png" alt="client logo">
+                                <img src="Assets/images/logo-6-color.png" alt="client logo">
                             </a>
                         </li>
 
@@ -505,9 +588,9 @@
 
             </article>
 
-            <!--
-        <!-- - #PORTFOLIO
-      -->
+        <!--
+        #PORTFOLIO
+    -->
 
             <article class="new-blog" data-page="new-blog">
 
@@ -581,7 +664,7 @@
                                         <ion-icon name="eye-outline"></ion-icon>
                                     </div>
 
-                                    <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                                    <img src="Assets/images/project-1.jpg" alt="finance" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Finance</h3>
@@ -599,7 +682,7 @@
                                         <ion-icon name="eye-outline"></ion-icon>
                                     </div>
 
-                                    <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                                    <img src="Assets/images/project-2.png" alt="orizon" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Orizon</h3>
@@ -617,7 +700,7 @@
                                         <ion-icon name="eye-outline"></ion-icon>
                                     </div>
 
-                                    <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                                    <img src="Assets/images/project-3.jpg" alt="fundo" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Fundo</h3>
@@ -635,7 +718,7 @@
                                         <ion-icon name="eye-outline"></ion-icon>
                                     </div>
 
-                                    <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                                    <img src="Assets/images/project-4.png" alt="brawlhalla" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Brawlhalla</h3>
@@ -653,7 +736,7 @@
                                         <ion-icon name="eye-outline"></ion-icon>
                                     </div>
 
-                                    <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                                    <img src="Assets/images/project-5.png" alt="dsm." loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">DSM.</h3>
@@ -671,7 +754,7 @@
                                         <ion-icon name="eye-outline"></ion-icon>
                                     </div>
 
-                                    <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                                    <img src="Assets/images/project-6.png" alt="metaspark" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">MetaSpark</h3>
@@ -689,7 +772,7 @@
                                         <ion-icon name="eye-outline"></ion-icon>
                                     </div>
 
-                                    <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                                    <img src="Assets/images/project-7.png" alt="summary" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Summary</h3>
@@ -707,7 +790,7 @@
                                         <ion-icon name="eye-outline"></ion-icon>
                                     </div>
 
-                                    <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                                    <img src="Assets/images/project-8.jpg" alt="task manager" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Task Manager</h3>
@@ -725,7 +808,7 @@
                                         <ion-icon name="eye-outline"></ion-icon>
                                     </div>
 
-                                    <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                                    <img src="Assets/images/project-9.png" alt="arrival" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Arrival</h3>
@@ -742,12 +825,9 @@
             </article>
 
 
-            -->
-
-
-            <!--
-        - #BLOG
-      -->
+        <!--
+    - #BLOG
+    -->
 
             <article class="blog" data-page="blog">
 
@@ -763,7 +843,7 @@
                             <a href="#">
 
                                 <figure class="blog-banner-box">
-                                    <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022"
+                                    <img src="Assets/images/blog-1.jpg" alt="Design conferences in 2022"
                                         loading="lazy">
                                 </figure>
 
@@ -792,7 +872,7 @@
                             <a href="#">
 
                                 <figure class="blog-banner-box">
-                                    <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer"
+                                    <img src="Assets/images/blog-2.jpg" alt="Best fonts every designer"
                                         loading="lazy">
                                 </figure>
 
@@ -821,7 +901,7 @@
                             <a href="#">
 
                                 <figure class="blog-banner-box">
-                                    <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                                    <img src="Assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
                                 </figure>
 
                                 <div class="blog-content">
@@ -850,7 +930,7 @@
                             <a href="#">
 
                                 <figure class="blog-banner-box">
-                                    <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week"
+                                    <img src="Assets/images/blog-4.jpg" alt="UI interactions of the week"
                                         loading="lazy">
                                 </figure>
 
@@ -880,7 +960,7 @@
                             <a href="#">
 
                                 <figure class="blog-banner-box">
-                                    <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing"
+                                    <img src="Assets/images/blog-5.jpg" alt="The forgotten art of spacing"
                                         loading="lazy">
                                 </figure>
 
@@ -910,7 +990,7 @@
                             <a href="#">
 
                                 <figure class="blog-banner-box">
-                                    <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                                    <img src="Assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
                                 </figure>
 
                                 <div class="blog-content">
@@ -944,9 +1024,9 @@
 
 
 
-            <!--
-        - #CONTACT
-      -->
+        <!--
+    - #CONTACT
+    -->
 
             <article class="contact" data-page="contact">
 
@@ -987,22 +1067,177 @@
                     </form>
 
                 </section>
-
             </article>
+        </div>
+    </main>
+
+    <!-- 
+    - #FOOTER
+    -->
+
+    <footer>
+    <div class="container">
+
+        <div class="card footer">
+
+        <div class="section footer-top">
+
+            <div class="footer-brand">
+
+            <a href="#" class="logo">
+                <img src="Assets/images/logo.png" width="119" height="37" loading="lazy" alt="Wren logo">
+            </a>
+
+            <p class="footer-text">
+                When an unknown prnoto sans took a galley and scrambled it to make specimen book not only five When an
+                unknown prnoto sans took a galley and scrambled it to five centurie.
+            </p>
+
+            <p class="footer-list-title">Address</p>
+
+            <address class="footer-text address">
+                123 Main Street <br>
+                New York, NY 10001
+            </address>
+
+            </div>
+
+            <div class="footer-list">
+
+            <p class="footer-list-title">Categories</p>
+
+            <ul>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Action</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Business</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Adventure</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Canada</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">America</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Curiosity</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Animal</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Dental</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Biology</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Design</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Breakfast</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Dessert</a>
+                </li>
+
+            </ul>
+
+            </div>
+
+            <div class="footer-list">
+
+            <p class="footer-list-title">Newsletter</p>
+
+            <p class="footer-text">
+                Sign up to be first to receive the latest stories inspiring us, case studies, and industry news.
+            </p>
+
+            <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
+
+                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="input-wrapper">
+                <input type="email" name="email_address" placeholder="Emaill address" required class="input-field"
+                autocomplete="off">
+
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <a href="#" class="btn btn-primary">
+                <span class="span">Subscribe</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+            </div>
 
         </div>
 
-    </main>
+        <div class="footer-bottom">
 
+            <p class="copyright">
+            &copy; Developed with ❤️ by <a href="#" class="copyright-link">Asperians</a>
+            </p>
 
+            <ul class="social-list">
 
+            <li>
+                <a href="https://twitter.com/theasperteam?lang=en" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
 
+                <span class="span">Twitter</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.linkedin.com/company/theasperteam/mycompany/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+                <span class="span">LinkedIn</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/theasperteam/?hl=en" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+
+                <span class="span">Instagram</span>
+                </a>
+            </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    </div>
+    </footer>
 
 
     <!--
     - custom js link
     -->
-    <script src="./profile.js"></script>
+    <script src="profile.js"></script>
+    <script src="script.js"></script>
 
     <!--
     - ionicon link
@@ -1011,5 +1246,4 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>
