@@ -16,7 +16,7 @@
 --text-columbia-blue: rgb(255, 202, 211);
 --text-wild-blue-yonder: rgb(255, 227, 229);
 --text-carolina-blue:rgba(190, 46, 49, 0.892);
---text-shadow-blue: rgb(150, 76, 76);
+--text-shadow-blue: rgb(254, 225, 229);
 --text-slate-gray: rgb(137, 68, 68);
 
 /** Gradient colors */
@@ -415,7 +415,7 @@ padding-block: 6px;
 
 .hero .carousel {
     height: 75vh;
-    width: 100%;
+    width: 100vw;
     margin-bottom: 5rem;
     display: flex;
     justify-content: center;
@@ -838,8 +838,6 @@ gap: 24px;
 
 
 
-
-
 /*-----------------------------------*\
 #FOOTER
 \*-----------------------------------*/
@@ -853,7 +851,7 @@ margin-block-end: 24px;
 
 .footer-top {
 display: grid;
-gap: 20px;
+gap: 15px;
 }
 
 .footer-brand .footer-text { font-size: var(--fontSize-6); }
@@ -870,16 +868,16 @@ margin-block-end: 30px;
 
 .footer-list ul { columns: 2; }
 
-.footer-link { margin-block-end: 12px; }
+.footer-link { margin-block-end: 18px; }
 
 .footer .input-wrapper {
 position: relative;
-margin-block-end: 24px;
+margin-block-end: 20px;
 }
 
 .footer .input-field {
 padding: 12px;
-padding-inline-start: 20px;
+padding-inline-start: 18px;
 border-block-end: 1px solid var(--text-wild-blue-yonder);
 font-size: var(--fontSize-6);
 }
@@ -899,7 +897,7 @@ transform: translateY(-50%);
 
 .footer-bottom {
 border-block-start: 1px solid var(--border-prussian-blue);
-padding-block: 50px;
+padding-block: 20px;
 }
 
 .copyright {
