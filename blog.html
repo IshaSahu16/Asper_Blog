@@ -1,54 +1,357 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog : </title>
-
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/editor.css">
-    <link rel="stylesheet" href="css/blog.css">
-
+    <title>Asperia | Blogs</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="25x25" href="Assets/images/logo.png">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <!-- 
+- #HEADER
+-->
 
-    <nav class="navbar">
-        <img src="img/logo.png" class="logo" alt="">
-        <ul class="links-container">
-            <li class="link-item"><a href="/" class="link">home</a></li>
-            <li class="link-item"><a href="/editor" class="link">editor</a></li>
-        </ul>
-    </nav>
+<header class="header" data-header>
+    <div class="container">
     
-    <div class="banner"></div>
-
-    <div class="blog">
-        <h1 class="title"></h1>
-        <p class="published"><span>published at - </span></p>
-        <div class="article">
-            
+        <a href="#" class="logo">
+        <img src="assets/images/logo.png" width="30" height="10" alt="logo">
+        </a>
+    
+        <nav class="navbar" data-navbar>
+    
+        <div class="navbar-top">
+            <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="119" height="37" alt="logo">
+            </a>
+    
+            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
         </div>
+    
+        <ul class="navbar-list">
+    
+            <li>
+            <a href="#home" class="navbar-link hover-1" data-nav-toggler>Home</a>
+            </li>
+    
+            <li>
+            <a href="#categories" class="navbar-link hover-1" data-nav-toggler>Categories</a>
+            </li>
+    
+            <li>
+            <a href="#featured" class="navbar-link hover-1" data-nav-toggler>Featured Blogs</a>
+            </li>
+    
+            <li>
+            <a href="#recent" class="navbar-link hover-1" data-nav-toggler>Write a Blog</a>
+            </li>
+    
+            <!-- <li>
+            <a href="#" class="navbar-link hover-1" data-nav-toggler>Contact</a>
+            </li> -->
+    
+        </ul>
+    
+        <div class="navbar-bottom">
+    
+            <div class="profile-card">
+            <img src="./assets/images/author-1.png" width="48" height="48" alt="Steven" class="profile-banner">
+    
+            <!-- <div>
+                <p class="card-title">Hello Steven !</p>
+    
+                <p class="card-subtitle">
+                You have 3 new messages
+                </p>
+            </div> -->
+            </div>
+    
+            <ul class="link-list">
+    
+            <li>
+                <a href="#" class="navbar-bottom-link hover-1">Profile</a>
+            </li>
+    
+            <li>
+                <a href="#" class="navbar-bottom-link hover-1">Articles Saved</a>
+            </li>
+    
+            <li>
+                <a href="#" class="navbar-bottom-link hover-1">Add New Post</a>
+            </li>
+    
+            <li>
+                <a href="#" class="navbar-bottom-link hover-1">My Likes</a>
+            </li>
+    
+            <li>
+                <a href="#" class="navbar-bottom-link hover-1">Account Setting</a>
+            </li>
+    
+            <li>
+                <a href="#" class="navbar-bottom-link hover-1">Sign Out</a>
+            </li>
+    
+            </ul>
+    
+        </div>
+    
+        </nav>
+    
+        <a href="login.html" class="btn btn-primary">Login</a>
+        <!-- <a href="#" class="btn btn-primary">Sign Up</a> -->
+    
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+        
+    
     </div>
+    </header>
 
-    <h1 class="sub-heading">Read more</h1>
+    <section class="blog-post section-header-offset">
+        <div class="blog-post-container container">
+            <div class="blog-post-data">
+                <h3 class="title blog-post-title">Is In-Person Dining Still Relevant?</h3>
+                <div class="article-data">
+                    <span>Dec 6th 2021</span>
+                    <span class="article-data-spacer"></span>
+                    <span>4 Min read</span>
+                </div>
+                <img src="Assets/images/b1.jpg" alt="">
+            </div>
 
-    <!-- blog section -->
-    <section class="blogs-section">
-        <div class="blog-card">
-            <img src="img/header.png" class="blog-image" alt="">
-            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
-            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
-            <a href="/" class="btn dark">read</a>
+            <div class="container">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla vero. Quam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente repellat consequatur culpa, repudiandae aut dolores iusto. Rem natus soluta, dolores, ad deleniti, aut dolorem corrupti quasi amet unde delectus hic?
+                </p>
+                
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla vero. Quam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quod necessitatibus, aspernatur pariatur asperiores earum quas adipisci veritatis quidem facilis! Nihil veniam quaerat nulla possimus, asperiores vero voluptatum placeat. Eveniet!
+                </p>
+
+                <blockquote class="quote">
+                    <p><span><i class="ri-double-quotes-l"></i></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates, laboriosam voluptatum quos non consequuntur nesciunt necessitatibus tempora quod inventore corporis rem nihil itaque, at provident minus aliquam veritatis. Labore?  <span><i class="ri-double-quotes-r"></i></span></p>
+                </blockquote>
+            
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla vero. Quam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quod necessitatibus, aspernatur pariatur asperiores earum quas adipisci veritatis quidem facilis! Nihil veniam quaerat nulla possimus, asperiores vero voluptatum placeat. Eveniet!
+                </p>
+
+                <div class="author d-grid">
+                    <div class="author-image-box">
+                        <img src="./assets/images/author.jpg" alt="" class="article-image">
+                    </div>
+                    <div class="author-about">
+                        <h3 class="author-name">John Doe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quis repellat rerum, possimus cumque dolor repellendus eligendi atque explicabo exercitationem id.</p>
+                        <ul class="list social-media">
+                            <li class="list-item">
+                                <a href="#" class="list-link"><i class="ri-instagram-line"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link"><i class="ri-facebook-circle-line"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
 
-    <script src="js/firebase.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/blog.js"></script>
-    
+        <!-- 
+    - #FOOTER
+    -->
+
+    <footer>
+    <div class="container">
+
+        <div class="card footer">
+
+        <div class="section footer-top">
+
+            <div class="footer-brand">
+
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.png" width="119" height="37" loading="lazy" alt="logo">
+            </a>
+
+            <p class="footer-text">
+                When an unknown prnoto sans took a galley and scrambled it to make specimen book not only five When an
+                unknown prnoto sans took a galley and scrambled it to five centurie.
+            </p>
+
+            <p class="footer-list-title">Address</p>
+
+            <address class="footer-text address">
+                123 Main Street <br>
+                Bhopal, India 10001
+            </address>
+
+            </div>
+
+            <div class="footer-list">
+
+            <p class="footer-list-title">Categories</p>
+
+            <ul>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Action</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Business</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Adventure</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Canada</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">America</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Curiosity</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Animal</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Dental</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Biology</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Design</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Breakfast</a>
+                </li>
+
+                <li>
+                <a href="#" class="footer-link hover-2">Dessert</a>
+                </li>
+
+            </ul>
+
+            </div>
+
+            <div class="footer-list">
+
+            <p class="footer-list-title">Newsletter</p>
+
+            <p class="footer-text">
+                Sign up to be first to receive the latest stories inspiring us, case studies, and industry news.
+            </p>
+
+            <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
+
+                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="input-wrapper">
+                <input type="email" name="email_address" placeholder="Emaill address" required class="input-field"
+                autocomplete="off">
+
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <a href="#" class="btn btn-primary">
+                <span class="span">Subscribe</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p class="copyright">
+                &copy; Developed with ❤️ by <a href="#" class="copyright-link">Asperians</a>
+            </p>
+
+            <ul class="social-list">
+
+            <li>
+                <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+
+                <span class="span">Twitter</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+                <span class="span">LinkedIn</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+
+                <span class="span">Instagram</span>
+                </a>
+            </li>
+
+            </ul>
+
+        </div>
+
+        </div>
+
+    </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+    -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+
+    <!-- Custom script -->
+    <script src="blog.js"></script>
+    <script src="/script.js"></script>
+
+    <!-- 
+    - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
