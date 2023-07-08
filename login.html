@@ -46,13 +46,13 @@
 
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="text" id="username" required>
+                        <input type="text" required>
                         <label>Username</label>
                     </div>
 
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-lock-alt'></i></span>
-                        <input type="password" id="password" required>
+                        <input type="password" required>
                         <label>Password</label>
                     </div>
 
@@ -64,7 +64,7 @@
                     <button type="submit" class="btn">Sign In</button>
 
                     <div class="login-register">
-                        <p>Don't have an account? <a href="#" class="register-link" id="submit">Sign Up</a></p>
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
                     </div>
                 </form>
             </div>
@@ -78,27 +78,27 @@
 
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-user'></i></span>
-                        <input type="text" required>
+                        <input type="text" id="username" required>
                         <label>Username</label>
                     </div>
 
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" required>
+                        <input type="email" id="email" required>
                         <label>Email</label>
                     </div>
 
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-lock-alt'></i></span>
-                        <input type="password" required>
-                        <label>Password</label>
+                        <input type="text" id="phone" required>
+                        <label>Phone Number</label>
                     </div>
 
                     <div class="remember-forgot">
                         <label><input type="checkbox"> I agree to the terms and conditions</label>
                     </div>
 
-                    <button type="submit" class="btn">Sign Up</button>
+                    <button type="submit" class="btn" id="submit">Sign Up</button>
 
                     <div class="login-register">
                         <p>Already have an account? <a href="#" class="login-link">Sign In</a></p>
@@ -113,6 +113,8 @@
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
         import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+        // import { getAuth } from "firebase/auth" ;
+
 
         // Your web app's Firebase configuration
         const firebaseConfig = {
@@ -133,13 +135,14 @@
         document.getElementById("submit").addEventListener('click', function (e) {
             e.preventDefault();
             set(ref(db, 'user/' + document.getElementById("username").value),
-                {
+              {
+   
+                username: document.getElementById("username").value,
+                email: document.getElementById("email").value,
+                PhoneNumber: document.getElementById("phone").value
 
-                    username: document.getElementById("username").value,
-                    password: document.getElementById("password").value
-
-                });
-            alert("Login Sucessfull  !");
+              });
+            alert("Sign In Sucessfull  !");
         })
     </script>
   
