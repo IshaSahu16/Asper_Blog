@@ -1478,7 +1478,17 @@ textarea.form-input::-webkit-resizer {
             font-weight: 300;
             border-bottom: 2px solid white;
         }
+        .sidebar{
+            margin-top: 10rem;
+        }
 }
+
+/* @media (max-width:571px){
+    .sidebar{
+        margin-top: 10rem;
+    }
+} */
+
 
 
     /**
