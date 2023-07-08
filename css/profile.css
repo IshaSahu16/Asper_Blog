@@ -88,12 +88,9 @@
 }
 
 
-
-
-
 /*-----------------------------------*\
     #RESET
-  \*-----------------------------------*/
+\*-----------------------------------*/
 
 *,
 *::before,
@@ -154,12 +151,9 @@ body {
 }
 
 
-
-
-
 /*-----------------------------------*\
     #REUSED STYLE
-  \*-----------------------------------*/
+\*-----------------------------------*/
 
 .sidebar,
 article {
@@ -318,7 +312,7 @@ article.about.active {
 
 /*-----------------------------------*\
     #MAIN
-  \*-----------------------------------*/
+\*-----------------------------------*/
 
 main {
     margin: 15px 12px;
@@ -326,13 +320,9 @@ main {
     min-width: 259px;
 }
 
-
-
-
-
 /*-----------------------------------*\
     #SIDEBAR
-  \*-----------------------------------*/
+\*-----------------------------------*/
 
 .sidebar {
     margin-bottom: 15px;
@@ -484,9 +474,9 @@ main {
 
 /*-----------------------------------*\
     #NAVBAR
-  \*-----------------------------------*/
+\*-----------------------------------*/
 
-.navbar {
+.navbar1 {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -499,7 +489,7 @@ main {
     z-index: 5;
 }
 
-.navbar-list {
+.navbar1-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -507,29 +497,26 @@ main {
     padding: 0 10px;
 }
 
-.navbar-link {
+.navbar1-link {
     color: var(--light-gray);
     font-size: var(--fs-8);
     padding: 20px 7px;
     transition: color var(--transition-1);
 }
 
-.navbar-link:hover,
-.navbar-link:focus {
+.navbar1-link:hover,
+.navbar1-link:focus {
     color: var(--light-gray-70);
 }
 
-.navbar-link.active {
+.navbar1-link.active {
     color: var(--orange-yellow-crayola);
 }
 
 
-
-
-
 /*-----------------------------------*\
     #ABOUT
-  \*-----------------------------------*/
+\*-----------------------------------*/
 
 .about .article-title {
     margin-bottom: 15px;
@@ -830,7 +817,7 @@ main {
 
 /*-----------------------------------*\
     #PORTFOLIO
-  \*-----------------------------------*/
+\*-----------------------------------*/
 
 .filter-list {
     display: none;
@@ -1012,7 +999,7 @@ main {
 
 /*-----------------------------------*\
     #BLOG
-  \*-----------------------------------*/
+\*-----------------------------------*/
 
 .blog-posts {
     margin-bottom: 10px;
@@ -1108,7 +1095,7 @@ main {
 
 /*-----------------------------------*\
     #CONTACT
-  \*-----------------------------------*/
+\*-----------------------------------*/
 
 .mapbox {
     position: relative;
@@ -1234,12 +1221,9 @@ textarea.form-input::-webkit-resizer {
 }
 
 
-
-
-
 /*-----------------------------------*\
     #RESPONSIVE
-  \*-----------------------------------*/
+\*-----------------------------------*/
 
 /**
    * responsive larger than 450px screen
@@ -1267,10 +1251,6 @@ textarea.form-input::-webkit-resizer {
     }
 
 }
-
-
-
-
 
 /**
    * responsive larger than 580px screen
@@ -1328,18 +1308,14 @@ textarea.form-input::-webkit-resizer {
         font-size: 18px;
     }
 
-
-
     /**
      * #MAIN
      */
 
     main {
-        margin-top: 60px;
+        margin-top: 11rem;
         margin-bottom: 100px;
     }
-
-
 
     /**
      * #SIDEBAR
@@ -1485,15 +1461,15 @@ textarea.form-input::-webkit-resizer {
      * #NAVBAR
      */
 
-    .navbar {
+    .navbar1 {
         border-radius: 20px 20px 0 0;
     }
 
-    .navbar-list {
+    .navbar1-list {
         gap: 20px;
     }
 
-    .navbar-link {
+    .navbar1-link {
         --fs-8: 14px;
     }
 
@@ -1734,7 +1710,7 @@ textarea.form-input::-webkit-resizer {
      * NAVBAR
      */
 
-    .navbar-link {
+    .navbar1-link {
         --fs-8: 15px;
     }
 
@@ -1876,7 +1852,7 @@ textarea.form-input::-webkit-resizer {
      * NAVBAR
      */
 
-    .navbar {
+    .navbar1 {
         position: absolute;
         bottom: auto;
         top: 0;
@@ -1888,12 +1864,12 @@ textarea.form-input::-webkit-resizer {
         box-shadow: none;
     }
 
-    .navbar-list {
+    .navbar1-list {
         gap: 30px;
         padding: 0 20px;
     }
 
-    .navbar-link {
+    .navbar1-link {
         font-weight: var(--fw-500);
     }
 
@@ -1943,10 +1919,6 @@ textarea.form-input::-webkit-resizer {
     }
 
 }
-
-
-
-
 
 /**
    * responsive larger than 1250px screen
