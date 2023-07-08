@@ -24,6 +24,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carousel.css">
 
   <!-- 
     - preload images
@@ -73,13 +74,13 @@
             <a href="#featured" class="navbar-link hover-1" data-nav-toggler>Featured Blogs</a>
           </li>
 
-          <!-- <li>
-            <a href="#recent" class="navbar-link hover-1" data-nav-toggler>Recent Post</a>
+          <li>
+            <a href="#recent" class="navbar-link hover-1" data-nav-toggler>Write a Blog</a>
           </li>
 
-          <li>
+          <!-- <li>
             <a href="#" class="navbar-link hover-1" data-nav-toggler>Contact</a>
-          </li>  -->
+          </li> -->
 
         </ul>
 
@@ -88,13 +89,13 @@
           <div class="profile-card">
             <img src="./assets/images/author-1.png" width="48" height="48" alt="Steven" class="profile-banner">
 
-            <div>
+            <!-- <div>
               <p class="card-title">Hello Steven !</p>
 
               <p class="card-subtitle">
                 You have 3 new messages
               </p>
-            </div>
+            </div> -->
           </div>
 
           <ul class="link-list">
@@ -129,7 +130,7 @@
 
       </nav>
 
-      <a href="#" class="btn btn-primary">Login</a>
+      <a href="login.html" class="btn btn-primary">Login</a>
       <!-- <a href="#" class="btn btn-primary">Sign Up</a> -->
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -141,9 +142,6 @@
   </header>
 
 
-
-
-
   <main>
     <article>
 
@@ -152,8 +150,100 @@
       -->
 
       <section class="hero" id="home" aria-label="home">
-        <div class="container">
+        <div class="carousel">
+          <div class="img-slider">
+        <div class="slide active">
+        <img src="Assets/images/c1.jpg" alt="">
+        <div class="info">
+          <h2>Slide 01</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="Assets/images/c1.jpg" alt="">
+        <div class="info">
+          <h2>Slide 02</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="Assets/images/c1.jpg" alt="">
+        <div class="info">
+          <h2>Slide 03</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="Assets/images/c1.jpg" alt="">
+        <div class="info">
+          <h2>Slide 04</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
 
+    <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+
+    // Javascript for image slider autoplay navigation
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 10000);
+      }
+      repeater();
+    }
+    repeat();
+    </script>
           <!-- <div class="hero-content">
 
             <p class="hero-subtitle">Hello Everyone!</p>
@@ -178,11 +268,13 @@
                 <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
               </button>
 
-            </div>
+            </div> 
 
-          </div>
+          </div> -->
 
-          <div class="hero-banner">
+          
+
+          <!-- <div class="hero-banner">
 
             <img src="./assets/images/hero-banner.png" width="327" height="490" alt="Wren Clark" class="w-100">
 
@@ -191,16 +283,8 @@
             <img src="./assets/images/pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2">
 
           </div> -->
-
-          <!-- <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
-
-          <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2"> -->
-
         </div>
       </section>
-
-
-
 
 
       <!-- 
@@ -972,7 +1056,7 @@
 
             </ul>
 
-            <nav aria-label="pagination" class="pagination">
+            <!-- <nav aria-label="pagination" class="pagination">
 
               <a href="#" class="pagination-btn" aria-label="previous page">
                 <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
@@ -987,7 +1071,7 @@
                 <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
               </a>
 
-            </nav>
+            </nav> -->
 
           </div>
 
@@ -1471,9 +1555,6 @@
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
   </a>
-
-
-
 
 
   <!-- 
