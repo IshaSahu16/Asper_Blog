@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+import { getAuth,signInWithEmailAndPassword, } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -18,10 +18,14 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth()
 
-var email = document.getElementById("email");
-var password = document.getElementById("password");
+// var email = document.getElementById("email");
+// var password = document.getElementById("password");
 window.login= function(e) {
     e.preventDefault();
+    console.log(e.target);
+    var email = e.target.querySelector("#email2");
+    var password = e.target.querySelector("#password2");
+    console.log(email, password);
     var obj = {
     email: email.value,
     password: password.value,
@@ -36,7 +40,7 @@ window.login= function(e) {
         
         
         
-        window.location.replace(index.html)
+        window.location.replace("index.html")
         // localStorage.setItem(success,user,uid)
         
     })

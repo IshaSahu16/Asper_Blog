@@ -973,11 +973,19 @@ transform: translateY(-10px);
 * responsive for large than 575px screen
 */
 
-@media (min-width: 575px) {
+/* @media (min-width: 360px) {
+    .hero .carousel {
+        height: 25vh;
+        width: 100vw;
+        margin-bottom: 4.5rem;
+        margin-top: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} */
 
-/**
-    * CUSTOM PROPERTY
-    */
+@media (min-width: 575px) {
 
 :root {
 
