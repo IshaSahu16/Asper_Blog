@@ -108,7 +108,7 @@
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
       </button>
-      
+
 
     </div>
   </header>
@@ -124,98 +124,98 @@
       <section class="hero" id="home" aria-label="home">
         <div class="carousel">
           <div class="img-slider">
-        <div class="slide active">
-        <img src="Assets/images/c2.jpg" alt="">
-        <div class="info">
-          <h2>Around the world</h2>
-          <p>Take a look at all the latest updates around the world</p>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="Assets/images/featured-3.png" alt="">
-        <div class="info">
-          <h2>Mountains and Valleys</h2>
-          <p>Your guide to the most beautiful mountains and valleys around the world</p>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="Assets/images/c5.avif" alt="">
-        <div class="info">
-          <h2>Latest in tech</h2>
-          <p>Read to find out all the latest innovations in the world of tech</p>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="Assets/images/c1.jpg" alt="">
-        <div class="info">
-          <h2>The fading Stars</h2>
-          <p>Find out why the stars are fading and how are we responsible for it</p>
-        </div>
-      </div>
-      
-      <div class="navigation">
-        <div class="btn active"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-      </div>
-    </div>
+            <div class="slide active">
+              <img src="Assets/images/c2.jpg" alt="">
+              <div class="info">
+                <h2>Around the world</h2>
+                <p>Take a look at all the latest updates around the world</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="Assets/images/featured-3.png" alt="">
+              <div class="info">
+                <h2>Mountains and Valleys</h2>
+                <p>Your guide to the most beautiful mountains and valleys around the world</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="Assets/images/c5.avif" alt="">
+              <div class="info">
+                <h2>Latest in tech</h2>
+                <p>Read to find out all the latest innovations in the world of tech</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="Assets/images/c1.jpg" alt="">
+              <div class="info">
+                <h2>The fading Stars</h2>
+                <p>Find out why the stars are fading and how are we responsible for it</p>
+              </div>
+            </div>
 
-    <script type="text/javascript">
-    var slides = document.querySelectorAll('.slide');
-    var btns = document.querySelectorAll('.btn');
-    let currentSlide = 1;
+            <div class="navigation">
+              <div class="btn active"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+            </div>
+          </div>
 
-    // Javascript for image slider manual navigation
-    var manualNav = function(manual){
-      slides.forEach((slide) => {
-        slide.classList.remove('active');
+          <script type="text/javascript">
+            var slides = document.querySelectorAll('.slide');
+            var btns = document.querySelectorAll('.btn');
+            let currentSlide = 1;
 
-        btns.forEach((btn) => {
-          btn.classList.remove('active');
-        });
-      });
+            // Javascript for image slider manual navigation
+            var manualNav = function (manual) {
+              slides.forEach((slide) => {
+                slide.classList.remove('active');
 
-      slides[manual].classList.add('active');
-      btns[manual].classList.add('active');
-    }
+                btns.forEach((btn) => {
+                  btn.classList.remove('active');
+                });
+              });
 
-    btns.forEach((btn, i) => {
-      btn.addEventListener("click", () => {
-        manualNav(i);
-        currentSlide = i;
-      });
-    });
+              slides[manual].classList.add('active');
+              btns[manual].classList.add('active');
+            }
 
-    // Javascript for image slider autoplay navigation
-    var repeat = function(activeClass){
-      let active = document.getElementsByClassName('active');
-      let i = 1;
+            btns.forEach((btn, i) => {
+              btn.addEventListener("click", () => {
+                manualNav(i);
+                currentSlide = i;
+              });
+            });
 
-      var repeater = () => {
-        setTimeout(function(){
-          [...active].forEach((activeSlide) => {
-            activeSlide.classList.remove('active');
-          });
+            // Javascript for image slider autoplay navigation
+            var repeat = function (activeClass) {
+              let active = document.getElementsByClassName('active');
+              let i = 1;
 
-        slides[i].classList.add('active');
-        btns[i].classList.add('active');
-        i++;
+              var repeater = () => {
+                setTimeout(function () {
+                  [...active].forEach((activeSlide) => {
+                    activeSlide.classList.remove('active');
+                  });
 
-        if(slides.length == i){
-          i = 0;
-        }
-        if(i >= slides.length){
-          return;
-        }
-        repeater();
-      }, 6100);
-      }
-      repeater();
-    }
-    repeat();
-    </script>
+                  slides[i].classList.add('active');
+                  btns[i].classList.add('active');
+                  i++;
+
+                  if (slides.length == i) {
+                    i = 0;
+                  }
+                  if (i >= slides.length) {
+                    return;
+                  }
+                  repeater();
+                }, 6100);
+              }
+              repeater();
+            }
+            repeat();
+          </script>
         </div>
       </section>
 
@@ -797,8 +797,8 @@
                     </h3>
 
                     <p class="card-text">
-                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
-                      roadrunner flapped lynx far that and jeepers giggled far and far
+                      In this blog post, we will explore 10 practical tips to help you thrive in your freelance career
+                      while working from the comfort of your home.
                     </p>
 
                     <div class="card-wrapper">
@@ -833,12 +833,12 @@
                     <a href="#" class="card-badge">Working Tips</a>
 
                     <h3 class="headline headline-3 card-title">
-                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                      <a href="#" class="link hover-2">Internet of Things: Connecting Our World in the Digital Age</a>
                     </h3>
 
                     <p class="card-text">
-                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
-                      roadrunner flapped lynx far that and jeepers giggled far and far
+                      Join us on this journey as we unravel the possibilities and challenges of this fascinating
+                      technological frontier.
                     </p>
 
                     <div class="card-wrapper">
@@ -873,12 +873,12 @@
                     <a href="#" class="card-badge">Working Tips</a>
 
                     <h3 class="headline headline-3 card-title">
-                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                      <a href="#" class="link hover-2">Eiffel Tower: Symbol of Love and Romance in Popular Culture</a>
                     </h3>
 
                     <p class="card-text">
-                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
-                      roadrunner flapped lynx far that and jeepers giggled far and far
+                      Join us as we uncover the fascinating history, and panoramic vistas that make the
+                      Eiffel Tower a must-visit landmark for travelers and architecture enthusiasts alike.
                     </p>
 
                     <div class="card-wrapper">
@@ -913,12 +913,12 @@
                     <a href="#" class="card-badge">Working Tips</a>
 
                     <h3 class="headline headline-3 card-title">
-                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                      <a href="#" class="link hover-2">The Role of Communication in Successful Teamwork</a>
                     </h3>
 
                     <p class="card-text">
-                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
-                      roadrunner flapped lynx far that and jeepers giggled far and far
+                      We'll uncover valuable insights and practical tips for enhancing team dynamics and achieving
+                      collective success through effective communication.
                     </p>
 
                     <div class="card-wrapper">
@@ -953,12 +953,12 @@
                     <a href="#" class="card-badge">Working Tips</a>
 
                     <h3 class="headline headline-3 card-title">
-                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                      <a href="#" class="link hover-2">Mastering the Art of Interviewing: Strategies for Success</a>
                     </h3>
 
                     <p class="card-text">
-                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
-                      roadrunner flapped lynx far that and jeepers giggled far and far
+                      We will provide you with valuable tips and techniques to help you deliver a remarkable performance
+                      that captivates your audience and leaves a lasting impression.
                     </p>
 
                     <div class="card-wrapper">
@@ -1327,7 +1327,9 @@
             </a>
 
             <p class="footer-text">
-              Our vision is to create a society of creative and dedicated minds to foster a positive work environment with the aim of encouraging the enthusiasts to gain expertise and exposure in different domains of development.
+              Our vision is to create a society of creative and dedicated minds to foster a positive work environment
+              with the aim of encouraging the enthusiasts to gain expertise and exposure in different domains of
+              development.
             </p>
 
             <p class="footer-list-title">Address</p>
@@ -1437,30 +1439,30 @@
           <ul class="social-list">
 
             <li>
-                <a href="https://twitter.com/theasperteam?lang=en" class="social-link" target="_blank">
+              <a href="https://twitter.com/theasperteam?lang=en" class="social-link" target="_blank">
                 <ion-icon name="logo-twitter"></ion-icon>
 
                 <span class="span">Twitter</span>
-                </a>
+              </a>
             </li>
 
             <li>
-                <a href="https://www.linkedin.com/company/theasperteam/mycompany/" class="social-link" target="_blank">
+              <a href="https://www.linkedin.com/company/theasperteam/mycompany/" class="social-link" target="_blank">
                 <ion-icon name="logo-linkedin"></ion-icon>
 
                 <span class="span">LinkedIn</span>
-                </a>
+              </a>
             </li>
 
             <li>
-                <a href="https://www.instagram.com/theasperteam/?hl=en" class="social-link" target="_blank">
+              <a href="https://www.instagram.com/theasperteam/?hl=en" class="social-link" target="_blank">
                 <ion-icon name="logo-instagram"></ion-icon>
 
                 <span class="span">Instagram</span>
-                </a>
+              </a>
             </li>
 
-            </ul>
+          </ul>
 
         </div>
 
