@@ -901,12 +901,24 @@ transform: translateY(-10px);
 
 
 
-@media (max-width: 420px) {
+@media (max-width: 380px) {
     .hero .carousel {
         height: 25vh;
         width: 100vw;
         margin-bottom: 4.5rem;
         margin-top: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .hero .carousel {
+        height: 23vh;
+        width: 100vw;
+        margin-bottom: 4.5rem;
+        margin-top: 11rem;
         display: flex;
         justify-content: center;
         align-items: center;
