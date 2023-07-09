@@ -1,15 +1,15 @@
 # Asperia
-#Team WebSparkers
+# Team WebSparkers
 
-#Team Members
+# Team Members
 Isha Sahu
 Ishaan Mathur
 
-#Asperia - A Blog Website For Team Asper
+# Asperia - A Blog Website For Team Asper
 
 The Asperia is a blog website built by Team WebSparkers for the Asper Team. It shows blogs of different categories with an attractive login/sign up page allowing users. The frontend service used are HTML, CSS and Javascript. The backend service used is Firebase for the authentication of login/signup page.
 
-#Features
+## Features
 
 The Asperia Website provides the following features:
 1. Home page with different Blogs and a carousel 
@@ -18,18 +18,18 @@ The Asperia Website provides the following features:
 
 The website is completely responsive.
 
-#TechStack Used:
+## TechStack Used:
 
 HTML
 CSS
 Javascript
 Firebase
 
-#Color Theme
+## Color Theme
 
 We followed the color theme of Asper which is Red and Black. We have used various shades of Red and Black along with some gradients. 
 
-#Fonts Used
+## Fonts Used
 
 Poppins
 Nono Sans
