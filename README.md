@@ -1,7 +1,7 @@
-# Asperia
-# Team WebSparkers
+# Asperia by Team WebSparkers
 
 # Team Members
+
 Isha Sahu
 Ishaan Mathur
 
