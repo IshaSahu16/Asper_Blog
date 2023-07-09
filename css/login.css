@@ -13,7 +13,7 @@ body {
 .background-login {
     width: 100%;
     height: 100vh;
-    background: url("/login_bg.jpg") no-repeat;
+    background: url("./login_bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     filter: blur(10px);
@@ -28,7 +28,7 @@ body {
     transform: translate(-50%, -50%);
     width: 75%;
     height: 550px;
-    background: url("/login_bg.jpg") no-repeat;
+    background: url("./login_bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
